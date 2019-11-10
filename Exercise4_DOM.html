@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َInput and Output Form</title>
+  </head>
+  <body>
+<form class="box" method="post" id="form1">
+  <h1>Form Input and Output</h1>
+  Firstname: <input type="text" name="fname" value=""><br>
+  Lastname: <input type="text" name="lname" value=""><br>
+  <button onclick="alert()" class="btn1" type="button">Click Me!</button>
+</form>
+<p id="demo"> </p>
+<script>
+function alert(){
+  var x = document.getElementById("form1");
+  var txt = "Good Morning "
+  var i;
+  for(i = 0; i <x.length; i++){
+    txt = txt + x.elements[i].value+" ";
+  }
+  
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
