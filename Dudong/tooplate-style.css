@@ -1,0 +1,85 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 15px;
+	color: #7a7a7a;
+	line-height: 22px;
+}
+.first-section {
+	background-image: url(first-section-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 20% 0px 20% 0px;
+}
+
+.first-section .text-content {
+	color: #fff;
+	text-align:center;
+}
+
+.first-section .text-content h2 {
+	font-size: 65px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+.first-section .text-content span {
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.second-section {
+	padding: 100px 0px;
+	display: block;
+}
+
+.container {
+	display: grid;
+	grid-gap: 150px;
+	grid-template-columns: repeat(5, 200px);
+	grid-template-rows: repeat(2, 200px);
+}
+
+.second-section .service-item {
+	text-align: center;
+}
+
+.second-section .service-item .icon img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.second-section h4 {
+	font-size: 20px;
+	color: #415b90;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.td1{
+	 background-color: bisque;
+	 border-radius: 5px;
+	}
+
+footer {
+	text-align: center;
+	background-image: url(footer-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 11% 0px 4% 0px;
+}
+footer p {
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	color: #fff;
+}
+
+
+
+

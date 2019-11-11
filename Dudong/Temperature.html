@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title> Converter </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="tooplate-style.css">
+
+    </head>
+    <body>
+        <section class="first-section">
+            <div class="text-content">
+              <h2>Converter</h2>
+              <div class="line-dec"></div>
+              <span>The professional Converter </span>
+            </div>
+    </section>
+            <div>
+                    <table>
+                    <tr><td class="td1">
+                      <h1>Mass Converter </h1>
+                    </td></tr>
+                    <tr><td class="td1">
+                    Welcome to Temperature Converter 
+                    </td></tr>
+                    </table>
+                    
+                    <form name="f">
+                    <table>
+                    <tr><td><br>
+                      Celsius: 
+                      <input id="inputtemp" type="number" name ="temp"> 
+                      <input  type="button" name ="Convert" Value = "Convert" onclick="tempConverter(f.temp.value)"></td></tr>
+                    </table><br>
+                    
+                    <table>
+                    <tr><td> Farenheit: </td><td><input id="farh"> </td></tr>
+                    <tr><td>Kelvin:</td><td><input id="kelvin"></td></tr>
+                    <tr><td>Rankine: </td><td><input id="rankine"></td></tr>
+                    <tr><td><input type="reset"  name="reset" Value="Reset"></td></tr>
+                    <tr><td><input type="button"  name="home" Value="Home" onclick="window.location.href='index.html'"></td></tr>
+                    <tr><td colspan="2">You Can Press Reset Button For Another Conversion</td></tr>
+                    </table>
+                    </form>
+                    </div>
+                    
+                    <script>
+                    function tempConverter() {
+                      document.getElementById("farh").value=valNum*1.8+32;
+                      document.getElementById("kelvin").value=valNum + 273.15;
+                      document.getElementById("rankine").value=valNum *1.8 + 491.67;
+                     }
+                    </script>
+
+
+<footer>
+    <p>Copyright &copy; 2019 URS Morong </p>
+</footer>
+    </body>
+</html>
